@@ -10,13 +10,21 @@ h3{
     border-radius: 1em;
     padding: 1em;
     width: 100%;
+    border: 0.1em soid transparent;
+    transition: 0.2s all;
+    
+}
+h3:hover{
+    border: 0.5em soid rgb(191, 222, 243);
+    background-color: transparent;
+    transition: 0.2s all;
     
 }
 img{
 
     border: 0.08em solid black;
     border-radius: 1em;
-    margin:1em 
+    margin:2em; 
 }
 article{
     text-align: center;
