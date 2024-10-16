@@ -10,41 +10,28 @@ h1 {
 section {
   margin: 2em;
 }
-<<<<<<< HEAD
-h3{
-    background-color: rgb(191, 222, 243);
-    margin-bottom: 1em;
-    border-radius: 1em;
-    padding: 1em;
-    width: 100%;
-    border: 0.1em soid transparent;
-    transition: 0.2s all;
-    
-}
-h3:hover{
-    border: 0.5em soid rgb(191, 222, 243);
-    background-color: transparent;
-    transition: 0.2s all;
-    
-}
-img{
-
-    border: 0.08em solid black;
-    border-radius: 1em;
-    margin:2em; 
-=======
 h3 {
   background-color: rgb(191, 222, 243);
   margin-bottom: 1em;
   border-radius: 1em;
   padding: 1em;
   width: 100%;
+  border:0.1em solid transparent;
+  transition:0.2s all;
+}
+h3:hover {
+  border:0.1em solid rgb(191, 222, 243);
+  background-color: transparent;
+  margin-bottom: 1em;
+  border-radius: 1em; 
+  padding: 1em;
+  width: 100%;
+  transition:0.2s all;
 }
 img {
   border: 0.08em solid black;
   border-radius: 1em;
   margin: 1em;
->>>>>>> f4114f6083ecaea2fe5868f25cbaa2e7a21de3cb
 }
 article {
   text-align: center;
@@ -57,10 +44,3 @@ p {
   text-align: start;
   line-height: 1.5em;
 }
-<<<<<<< HEAD
-p{
-    text-align: start;
-    line-height: 1.5em;
-}
-=======
->>>>>>> f4114f6083ecaea2fe5868f25cbaa2e7a21de3cb
