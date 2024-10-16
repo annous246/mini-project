@@ -1,0 +1,45 @@
+ul{
+    list-style: none;
+    cursor: pointer;
+    margin: 2em;
+
+}
+li{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: rgb(91, 63, 250);
+
+}
+#links{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#links ul:first-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;}
+
+.main-link {
+   margin: 2em;
+   
+
+}
+.sub-link {
+    margin-left: 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+.sub-link a{
+    margin:  1em ;
+
+
+}
