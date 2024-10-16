@@ -7,31 +7,59 @@ h1 {
   letter-spacing: 2px;
   font-weight: bolder;
 }
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #82c6f3;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  border: 2px solid transparent;
+  transition: 0.2s all;
+}
+header a:hover {
+  color: #6eb8ea;
+  border: 2px solid #6eb8ea;
+  background-color: white;
+  transition: 0.2s all;
+}
 section {
   margin: 2em;
 }
 h3 {
-  background-color: rgb(191, 222, 243);
+  background-color: rgb(88, 179, 241);
   margin-bottom: 1em;
   border-radius: 1em;
   padding: 1em;
   width: 100%;
-  border:0.1em solid transparent;
-  transition:0.2s all;
+  border: 0.1em solid transparent;
+  transition: 0.2s all;
+  color: white;
 }
 h3:hover {
-  border:0.1em solid rgb(191, 222, 243);
+  border: 0.1em solid rgb(110, 180, 227);
   background-color: transparent;
   margin-bottom: 1em;
-  border-radius: 1em; 
+  border-radius: 1em;
   padding: 1em;
   width: 100%;
-  transition:0.2s all;
+  transition: 0.2s all;
+  color: rgb(88, 179, 241);
 }
 img {
   border: 0.08em solid black;
   border-radius: 1em;
   margin: 1em;
+  width: 70%;
 }
 article {
   text-align: center;
