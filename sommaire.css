@@ -26,20 +26,83 @@ a{
     flex-direction: row;}
 
 .main-link {
-   margin: 2em;
+    color: black;
+    min-width: 100em;
+    padding: 1em;
+
+
    
 
 }
 .sub-link {
-    margin-left: 1em;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
+    margin-top: 1em;
 
 }
+.sub-link a::before{
+    position: absolute;
+    background-color: rgba(0, 110, 255, 0.527);
+    width: 0%;
+    height: 1.5em;
+    content: "";
+    border-radius: 1em;
+    transform: translateX(-5%);
+    z-index: 0;
+    transition: 0.2s all;
+}
 .sub-link a{
+    position: relative;
+    z-index: 100;
+    color: black;
     margin:  1em ;
+    transition: 0.2s all;
 
 
+}
+.sub-link a:hover{
+    transition: 0.2s all;
+
+
+}
+.sub-link a:hover::before{
+    width: 110%;
+
+    transition: 0.2s all;
+
+
+}
+h1 {
+  background-color: rgb(191, 222, 243);
+  margin-bottom: 1em;
+  border-radius: 1em;
+  color: rgb(71, 114, 231);
+  text-align: center;
+  padding: 1em;
+  width: 100%;
+  border:0.1em solid transparent;
+  transition:0.2s all;
+}
+h1:hover {
+  border:0.1em solid rgb(191, 222, 243);
+  background-color: transparent;
+  margin-bottom: 1em;
+  border-radius: 1em; 
+  padding: 1em;
+  width: 100%;
+  transition:0.2s all;
+}
+.main-linker {
+   margin: 2em;
+   border:0.08em solid black;
+   padding: 1em;
+   border-radius: 1em;
+   text-align: center;
+   
+
+}
+#links{
+    font-family: Arial, Helvetica, sans-serif;
 }
