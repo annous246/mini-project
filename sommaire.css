@@ -1,180 +1,91 @@
-body{
-    padding: 1em;
+body {
+  padding: 1em;
 }
-ul{
-    list-style: none;
-    cursor: pointer;
-    margin: 2em;
-
+a {
+  text-decoration: none;
+  color: rgb(91, 63, 250);
 }
-li{
-    margin: 0;
+#links {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-a{
-    text-decoration: none;
-    color: rgb(91, 63, 250);
-
-}
-#links{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-#links ul:first-child{
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: row;}
-
 .main-link {
-    padding: 1em;
-    border-bottom: 0.08em solid black;
-    transition: 0.2s all;
-
-
-   
-
+  padding: 1em;
+  border-bottom: 0.08em solid black;
+  transition: 0.2s all;
 }
-.main-link a{
-    color: black;
+.main-link a {
+  color: black;
 }
 .main-link:hover {
-    background-color: black;
-    border-radius: 1em;
-    transition: 0.2s all;
-
-
-   
-
+  background-color: black;
+  border-radius: 1em;
+  transition: 0.2s all;
 }
-.main-link:hover a{
-    color: white;
-
-    transition: 0.2s all;
-
+.main-link:hover a {
+  color: white;
+  transition: 0.2s all;
 }
 .sub-link {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    text-align: start;
-    margin-top: 1em;
-
+  text-align: start;
+  margin-top: 1em;
 }
-.sub-link a::before{
-    position: absolute;
-    background-color: rgba(0, 110, 255, 0.527);
-    width: 0%;
-    height: 1.5em;
-    content: "";
-    border-radius: 10em;
-    transform: translateX(-5%);
-    z-index: 0;
-    transition: 0.2s all;
+.sub-link a {
+  display: block;
+  position: relative;
+  z-index: 100;
+  color: black;
+  overflow: visible !important;
+  margin: 1em;
+  transition: 0.2s all;
+  border-radius: 10px;
+  padding: 10px;
 }
-.sub-link a{
-    position: relative;
-    z-index: 100;
-    color: black;
-    overflow: visible !important;
-    margin:  1em ;
-    transition: 0.2s all;
-
-
+.sub-link a:hover {
+  transition: 0.2s all;
+  color: white;
+  background-color: rgb(88, 179, 241);
 }
-.sub-link a:hover{
-    transition: 0.2s all;
+.sub-link a:hover::before {
+  width: 110%;
 
-
-}
-.sub-link a:hover::before{
-    width: 110%;
-
-    transition: 0.2s all;
-
-
+  transition: 0.2s all;
 }
 h1 {
-  background-color: rgb(191, 222, 243);
+  background-color: rgb(88, 179, 241);
+  color: white;
+  transition: 0.2s all;
+  border: 0.1em solid transparent;
   margin-bottom: 1em;
   border-radius: 1em;
-  color: rgb(71, 114, 231);
   text-align: center;
   padding: 1em;
   width: 100%;
-  border:0.1em solid transparent;
-  transition:0.2s all;
-}
-h1:hover {
-  border:0.1em solid rgb(191, 222, 243);
-  background-color: transparent;
-  margin-bottom: 1em;
-  border-radius: 1em; 
-  padding: 1em;
-  width: 100%;
-  transition:0.2s all;
 }
 .main-linker {
-   margin: 2em;
-   border:0.08em solid black;
-   padding: 1em;
-   border-radius: 1em;
-   text-align: center;
-   
-
+  margin: 2em;
+  border: 0.08em solid black;
+  padding: 1em;
+  border-radius: 1em;
+  text-align: center;
 }
-#links{
-    font-family: Arial, Helvetica, sans-serif;
+#links {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+#intro-section article {
+  background-color: rgba(0, 146, 214, 0.411);
+  padding: 1em;
+  border: 0.08em solid rgb(0, 146, 214);
+  border-radius: 1em;
+  margin-bottom: 2em;
+  transition: 0.2s all;
+}
 
+#intro-section article p {
+  margin: 0.5em;
+}
 
-#intro-section article{
-    background-color: rgba(0, 146, 214, 0.411);
-    padding: 1em;
-    border: 0.08em solid rgb(0, 146, 214);
-    border-radius: 1em;
-    margin-bottom: 2em;
-    transition: 0.2s all;
-}
-#intro-section article:hover{
-    background-color: transparent;
-    transition: 0.2s all;
-
-}
-#intro-section article p{
-margin: 0.5em;
-}
-@media only  screen and (max-width:460px) {
-    .sub-link a::before{
-        height: 3em;
-    }
-    .sub-link{
-        overflow-y: scroll;
-    }
-    
-}
-@media only  screen and (max-width:334px) {
-    .sub-link a::before{
-        height: 4.2em;
-    }
-    .sub-link{
-        overflow-y: scroll;
-    }
-    
-}
-@media only  screen and (max-width:270px) {
-    .sub-link a::before{
-        display: none;
-        width: 0;
-        height: 0;
-        background-color: transparent;
-    }
-    .sub-link{
-        overflow-y: hidden;
-    }
-    
-}

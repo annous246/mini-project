@@ -7,12 +7,12 @@ h1 {
   letter-spacing: 2px;
   font-weight: bolder;
 }
-header {
+footer {
+  margin: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
 }
-header a {
+footer a {
   margin-top: 20px;
   text-decoration: none;
   color: white;
@@ -21,12 +21,10 @@ header a {
   border-radius: 20px;
   font-size: 20px;
   font-weight: bold;
-  position: absolute;
-  right: 20px;
   border: 2px solid transparent;
   transition: 0.2s all;
 }
-header a:hover {
+footer a:hover {
   color: #6eb8ea;
   border: 2px solid #6eb8ea;
   background-color: white;
@@ -37,23 +35,23 @@ section {
 }
 h3 {
   background-color: rgb(88, 179, 241);
+  color: white;
+  transition: 0.2s all;
+  border: 0.1em solid transparent;
   margin-bottom: 1em;
   border-radius: 1em;
   padding: 1em;
   width: 100%;
-  border: 0.1em solid transparent;
-  transition: 0.2s all;
-  color: white;
 }
 h3:hover {
   border: 0.1em solid rgb(110, 180, 227);
+  color: rgb(88, 179, 241);
   background-color: transparent;
+  transition: 0.2s all;
   margin-bottom: 1em;
   border-radius: 1em;
   padding: 1em;
   width: 100%;
-  transition: 0.2s all;
-  color: rgb(88, 179, 241);
 }
 img {
   border: 0.08em solid black;
@@ -71,4 +69,20 @@ article {
 p {
   text-align: start;
   line-height: 1.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header h1 {
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  header h1 {
+    font-size: 30px;
+  }
 }
