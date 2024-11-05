@@ -1,0 +1,95 @@
+#conv-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+input {
+  height: 1.5em;
+  border-radius: 1em;
+  border: 0.02em solid black;
+  text-align: center;
+  padding: 1em;
+}
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+input::-webkit-outer-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+.inputSpan {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  overflow: visible;
+}
+input:hover {
+  border: 0.2em solid black;
+  transition: 1s all;
+}
+
+#deadItem {
+  transform: translateY(-180%);
+  border-bottom: 0.4em solid transparent;
+  z-index: 100;
+  font-size: 1em;
+  user-select: none;
+  pointer-events: none;
+  background-color: transparent;
+  transition: 0.2s all;
+}
+input:focus + #deadItem {
+  border-bottom: 0.4em solid white;
+  transform: translate(-20%, -305%);
+  transition: 0.2s all;
+}
+#result {
+  border: 0.08em solid black;
+  width: 10em;
+  height: 5em;
+  border-radius: 1em;
+  text-align: start;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+#currency {
+  width: 20%;
+  height: 100%;
+  border-right: 0.1em solid black;
+  text-align: center;
+  padding: 0 0.5em;
+  align-content: center;
+}
+#display {
+  width: 70%;
+  height: 100%;
+  text-align: center;
+  word-wrap: break-word;
+  align-content: center;
+  padding: 0.1em;
+  overflow: hidden;
+  justify-content: center;
+}
+#con-image {
+  background-image: url("./money.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 3em;
+  height: 3em;
+  margin: 2em;
+}
+#selection {
+  border-radius: 1em;
+  padding: 1em;
+}
