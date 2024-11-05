@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <form id="userForm">
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" />
+        <div id="nameError" class="errorClass hideClass"></div>
+        <div id="nameIcon" class="iconClass hideClass">✅</div>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <div id="emailError" class="errorClass hideClass"></div>
+        <div id="emailIcon" class="iconClass hideClass">✅</div>
+      </div>
+      <div>
+        <label for="password"
+          >Password <span class="passwordIndication">(8 Charachters Min)</span></label
+        >
+        <input type="password" id="password" />
+        <div id="passwordError" class="errorClass hideClass"></div>
+        <div id="passwordIcon" class="iconClass hideClass">✅</div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>Liste des Utilisateurs :</h1>
+    <table id="tableList">
+      <tr>
+        <th>Nom</th>
+        <th>Email</th>
+      </tr>
+    </table>
+    <script src="./form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+form {
+  margin: 10px;
+}
+form div,
+button {
+  margin: 10px;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+form input {
+  border-radius: 8px;
+  height: 22px;
+  width: 200px;
+  padding: 5px 10px;
+}
+button {
+  background-color: rgb(0, 166, 255);
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 120px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.6s ease;
+}
+
+button:hover {
+  border: 2px solid rgb(0, 166, 255);
+  color: rgb(0, 166, 255);
+  background-color: white;
+  transition: 0.6s ease;
+}
+
+.errorClass {
+  color: red;
+}
+.succesClass {
+  color: green;
+}
+.inputError {
+  border: 2px solid red;
+}
+.inputSuccess {
+  border: 2px solid green;
+}
+.hideClass {
+  display: none;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+}
+th {
+  background-color: rgb(36, 164, 238);
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+}
+table {
+  border-collapse: collapse;
+  width: 500px;
+  text-align: center;
+}
+
+.passwordIndication {
+  color: #777;
+}
